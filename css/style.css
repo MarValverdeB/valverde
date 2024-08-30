@@ -1,0 +1,376 @@
+:root {
+    --color-primary: white !important;
+    --color-secondary: #eb0aab;
+    --color-tertiary: #00000071;
+    --color-quaternary: #8867bd;
+    --color-quintanary: #923294; 
+    --color-hover: #e409eb;
+
+    --ibm-plex-mono-light:
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 300;
+        font-style: normal;
+      
+      --ibm-plex-mono-regular:
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+      
+      --ibm-plex-mono-medium: 
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+
+      --kanit-light:
+        font-family: "Kanit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      
+      --kanit-regular:    
+       font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      --kanit-medium:
+        font-family: "Kanit", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+
+      --chakra-petch-light:
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      
+      --chakra-petch-regular:
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+      --chakra-petch-medium:
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.social { 
+    text-decoration: none;
+}
+
+.header {
+    color: var(--color-primary);
+    font-family: var(--kanit-medium);
+    font-size: 3rem;
+    height: 5vh;
+    position: relative;
+    display: flex;
+}
+
+video { 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.logo {
+    padding-top: 0.125%;
+    width: 3%;
+    margin-left: 1.12%;
+}
+
+.text-area {
+    border: none;
+    border-radius: 3%;
+    border-color: var(--color-secondary);
+    background-color: #0000005f;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-primary);
+    font-family: var(--kanit-medium);
+    font-size: 1.75rem;
+    padding: 1%;
+    opacity: 120%;
+    width: 80%;
+    margin-left: 10%;
+    top: 90%;
+    gap: 10%;
+    text-transform: lowercase;
+    left: 80%;
+}
+
+::placeholder{ 
+    color: var(--color-primary);
+
+}
+.text-area:focus {
+    outline: none;
+}
+
+.botones {
+    width: 23%;
+    display: flex;
+    margin-top: 10%;
+    height: 4.1667%;
+    border-bottom: 1px solid hsla(314, 77%, 54%, 0.702);
+    text-shadow: none;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: var(--color-primary)!important;
+    font-weight: bold;
+    border-radius: 5%;
+    padding: 1% 1%;    
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    box-shadow: 0 5px 0 #db9dcc,
+    0 11px 5px hsla(288, 90%, 62%, 0.88);
+    background-color: #000000a9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    font-size: .80rem;
+}
+
+.botones:active {
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -o-transform: translateY(7px);
+    transform: translateY(7px);
+}
+
+.btn-desencriptar {
+    background: var(--color-tertiary);
+    border: 1px SOLID #f605b2;
+    opacity: 120%;
+    border-radius: 24px;
+    color: #0bef67;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    height: 15%;
+    
+}
+
+.btn-desencriptar:hover {
+    background-color: var(--color-hover);
+    padding: 2%;
+}
+
+.btn-desencriptar:active {
+    box-shadow: 0 3px 0 #3a6600,
+                0 4px 6px hsla(0, 0%, 0%, 0.719);
+}
+.btn-encriptar {
+    background: var(--color-tertiary);
+    border: 1px SOLID #f605b2;
+    opacity: 120%;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    margin-top: 5%;
+    height: 15%;
+    margin-left: 14%;
+}
+
+.btn-encriptar:active {
+    box-shadow: 0 3px 0 #3a6600,
+                0 4px 6px hsla(0, 0%, 0%, 0.7);
+}
+
+.btn-encriptar:hover {
+    background-color: var(--color-hover);
+    padding: 2%;
+}
+
+.btn-limpiar {
+    background: var(--color-tertiary);
+    border: 1px SOLID #f605b2;
+    opacity: 120%;
+    border-radius: 24px;
+    color: #0bef67;
+    cursor: pointer;
+    margin-top: 5%;
+    height: 15%;
+}
+
+.btn-limpiar:active {
+    box-shadow: 0 3px 0 #3a6600,
+                0 4px 6px hsla(0, 0%, 0%, 0.719);
+}
+
+.btn-limpiar:hover {
+    background-color: var(--color-hover);
+    padding: 2%;
+}
+
+.mensaje {
+    border: none;
+    border-radius: 3%;
+    border-color: var(--color-secondary);
+    background-image: url("/image/mujer-pelo-blanco.png");
+    background-color: #0000005f;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 60%;
+    color: var(--color-primary);
+    font-family: var(--kanit-medium);
+    font-size: 1.75rem;
+    padding: 1%;
+    padding-left: 2%;
+    opacity: 120%;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 0%;
+    gap: 10%;
+    text-transform: lowercase;
+}
+
+.boton {
+    width: 23%;
+    display: flex;
+    margin-top: 10%;
+    height: 4.1667%;
+    border-bottom: 1px solid hsla(314, 77%, 54%, 0.702);
+    text-shadow: none;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: var(--color-primary)!important;
+    font-weight: bold;
+    border-radius: 5%;
+    padding: 1% 1%;    
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    box-shadow: 0 5px 0 #db9dcc,
+    0 11px 5px hsla(288, 90%, 62%, 0.88);
+    background-color: #000000a9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    font-size: .80rem;
+}
+
+.botones:active {
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -o-transform: translateY(7px);
+    transform: translateY(7px);
+}
+
+.btn-copiar {
+    background: var(--color-tertiary);
+    border: 1px SOLID #f605b2;
+    opacity: 120%;
+    border-radius: 24px;
+    color: #0bef67;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-right: 1%;
+    margin-top: 5%;
+    height: 15%;
+}
+
+.btn-copiar:hover {
+    background-color: var(--color-hover);
+    padding: 2%;
+}
+
+.informacion {
+    color: var(--color-primary);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: .1%;
+    font-weight: bold;
+}
+
+.informacion__alerta {
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: var(--kanit-light);
+    text-align: center;
+    margin-top: .3%;
+}
+
+.leyenda {
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: var(--kanit-light);
+    text-align: center;
+    margin-top: .3%;
+}
+
+.informacion__footer {
+    color: var(--color-primary);
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--ibm-plex-mono-medium);
+}
+
+.footer {
+    text-align: center;
+    color: var(--color-primary);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+} 
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .text-area{
+        height: 40%;
+        font-size: 1rem;
+    }
+    .mensaje{
+        height: 40%;
+        background-size: 50% 50%;
+        font-size: 1rem;
+    }
+    .botones{
+        font-size: .50rem;
+    }
+    .boton{
+        font-size: .50rem;
+    }
+    .informacion__alerta{
+        text-align: center;
+        font-size: .70rem;
+    }
+  }
